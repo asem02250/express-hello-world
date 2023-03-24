@@ -1,7 +1,7 @@
-const app = require('./app')
+const mineflayer = require('mineflayer')
 
-const port = process.env.PORT || 3000
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+const bot = mineflayer.createBot({
+    host: 'lcoalhost',
+    port: '1111',
+    username: 'bot'
 })
